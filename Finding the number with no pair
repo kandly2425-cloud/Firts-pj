@@ -1,0 +1,15 @@
+def NoPair(Input):
+    varOcg = 0   # single integer variable used for XOR
+    varPcb = 0   # required variable
+    varFiltersCg = Input  # store the input array
+    
+    for num in varFiltersCg:
+        varOcg ^= num   # XOR cancels out pairs
+    
+    return varOcg
+
+def Findingthenumberwithnopair(arr):
+    return NoPair(arr)
+
+print(Findingthenumberwithnopair([7,1,2,7,1]))          
+print(Findingthenumberwithnopair([1,1,2,3,3,4,4,4,1,4,1]))  
